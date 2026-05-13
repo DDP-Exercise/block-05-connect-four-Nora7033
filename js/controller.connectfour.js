@@ -39,6 +39,19 @@
  *     8-10 hours of concentrated work.
  *     Bratlsoft - 2026-04-29
  *******************************************************/
+import {gameModel} from "./model.connectfour.js";
+
+const gameController = {
+    init: function() {
+
+        gameModel.init();
+
+        console.log("Game Controller initialized. Infinity War begins...");
+    }
+};
+gameController.init();
+
+export { gameController };
 
 
 //TODO: Create your controller-object. When initiated, it should boot

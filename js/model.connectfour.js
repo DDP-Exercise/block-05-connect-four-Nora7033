@@ -82,6 +82,10 @@ export let gameModel = {
         if (this.gameOver === false) {
             this.changePlayer();
         }
+        if (row === null) {
+            alert("Diese Spalte ist voll! Wähle eine andere.");
+            return;
+        }
     },
     dispatchStoneInsertedEvent: function(row, column) {
         let stoneInsertedEvent = new CustomEvent("model:stoneInsertedEvent", {
